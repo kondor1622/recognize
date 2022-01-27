@@ -12,7 +12,7 @@ if (process.env.RECOGNIZE_PUREJS === 'true') {
 	PUREJS = true
 } else {
 	try {
-		if (false && process.env.RECOGNIZE_GPU === 'true') {
+		if (process.env.RECOGNIZE_GPU === 'true') {
 			tf = require('@tensorflow/tfjs-node-gpu')
 			faceapi = require('@vladmandic/face-api/dist/face-api.node-gpu.js')
 		} else {
